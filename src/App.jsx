@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RefreshCw, AlertCircle } from 'lucide-react';
+import { RefreshCw } from 'lucide-react';
 
 export default function TradingDashboard() {
   const [stocks, setStocks] = useState({
@@ -26,7 +26,7 @@ export default function TradingDashboard() {
     type: 'momentum',
     notes: ''
   });
-  const [budget, setBudget] = useState(50);
+  const [budget] = useState(50);
   const [invested, setInvested] = useState(0);
 
   const [recommendations] = useState([
